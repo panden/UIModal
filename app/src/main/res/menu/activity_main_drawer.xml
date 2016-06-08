@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/set_08"
+            android:title="设备管理" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/set_10"
+            android:title="无线中继" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/set_12"
+            android:title="WiFi设置" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/advanced_settings"
+            android:title="高级设置" />
+
+        <item
+            android:icon="@drawable/set_14"
+            android:title="应用插件" />
+
+        <item
+            android:icon="@drawable/set_06"
+            android:title="切换设备" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:icon="@drawable/about_ico"
+                android:title="关于" />
+
+            <item
+                android:icon="@drawable/restart_ico"
+                android:title="重启设备" />
+            <item
+                android:icon="@drawable/ic_menu_send"
+                android:title="退出" />
+        </menu>
+    </item>
+
+</menu>
