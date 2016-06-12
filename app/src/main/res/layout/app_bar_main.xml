@@ -12,23 +12,41 @@
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
+
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#4A91F2" />
+            android:background="#4A91F2" >
 
-        <com.i370.ui.view.PagerSlidingTabStrip
-            android:id="@+id/psts"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="#4A91F2"
-            app:pstsIndicatorColor="#C74B46"
-            app:pstsIndicatorHeight="2dp"
-            android:fillViewport="false">
-        </com.i370.ui.view.PagerSlidingTabStrip>
+            <com.i370.ui.view.PagerSlidingTabStrip
+                android:id="@+id/psts"
+                android:layout_width="160dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="right"
+                android:background="#4A91F2"
+                app:pstsIndicatorColor="#C74B46"
+                app:pstsIndicatorHeight="2dp"
+                app:pstsUnderlineHeight="0dp"
+                app:pstsTabPaddingLeftRight="10dp"
+                android:fillViewport="false">
+            </com.i370.ui.view.PagerSlidingTabStrip>
+
+        </android.support.v7.widget.Toolbar>
+
+
     </android.support.design.widget.AppBarLayout>
 
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_downward_black_48dp"
+        android:layout_gravity="bottom|right"
+        app:backgroundTint="#EFEFEF"
+        android:layout_margin="16dp"
+        />
+
     <include layout="@layout/content_main" />
+
 
 </android.support.design.widget.CoordinatorLayout>

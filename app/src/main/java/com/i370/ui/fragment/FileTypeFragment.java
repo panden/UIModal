@@ -17,7 +17,10 @@ import com.i370.ui.R;
 public class FileTypeFragment extends BaseFragment {
 
     private RecyclerView file_type_gride;
-    private String[] typeNames=new String[]{"图片","音频","视频","文档","压缩包","收藏","打开记录","下载管理","共享文件"};
+    private String[] typeNames=new String[]{"图片","音频","视频","文档","压缩包","收藏","最近打开","文件锁","共享文件"};
+    private int[] typeIcos=new int[]{R.drawable.category_icon_image, R.drawable.category_icon_music, R.drawable.category_icon_video,
+            R.drawable.category_icon_document, R.drawable.category_icon_compress, R.drawable.category_icon_favorite,
+            R.drawable.category_icon_recent, R.drawable.ic_mai_strongbox, R.drawable.category_icon_application};
     private MyAdapter mAdapter;
 
     @Override
@@ -54,6 +57,7 @@ public class FileTypeFragment extends BaseFragment {
         @Override
         public void onBindViewHolder(MyViewHolder holder, int position) {
             holder.tv.setText(typeNames[position]);
+            holder.img.setImageResource(typeIcos[position]);
         }
 
         @Override
@@ -64,12 +68,13 @@ public class FileTypeFragment extends BaseFragment {
         protected class MyViewHolder extends RecyclerView.ViewHolder{
 
             ImageView img;
-            TextView tv;
+            TextView tv,file_count_tv;
 
             public MyViewHolder(View itemView) {
                 super(itemView);
                 img= (ImageView) itemView.findViewById(R.id.img);
                 tv= (TextView) itemView.findViewById(R.id.tv);
+                file_count_tv= (TextView) itemView.findViewById(R.id.file_count_tv);
             }
         }
     }

@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.i370.ui.adapter.PagerSlideAdapter;
@@ -35,6 +36,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     private DrawerLayout drawer;
     private NavigationView navigationView;
     private String[] mFragmentNames=new String[]{"分类","手机","设备"};
+    private int[] mFragmentIcons=new int[]{R.drawable.ic_widgets_white_48dp, R.drawable.ic_phone_android_white_48dp, R.drawable.ic_storage_white_48dp};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -123,6 +125,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
             View baseView=View.inflate(MainActivity.this, R.layout.main_fragment_item, null);
             TextView tv= (TextView) baseView.findViewById(R.id.tv);
             tv.setText(mFragmentNames[position]);
+            ImageView img= (ImageView) baseView.findViewById(R.id.img);
+            img.setImageResource(mFragmentIcons[position]);
             return baseView;
         }
     };

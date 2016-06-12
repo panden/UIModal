@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:layout_weight="1"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:gravity="center"
     >
 
@@ -13,17 +12,15 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:scaleType="fitCenter"
-        android:layout_marginRight="10dp"
-        android:visibility="gone"
-        android:src="@drawable/about_ico"/>
+        android:src="@drawable/set_06"/>
 
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textColor="#FFF"
         android:text="Fragment Item"
-        android:textSize="18sp"
+        android:visibility="gone"
         android:gravity="center"/>
 </LinearLayout>

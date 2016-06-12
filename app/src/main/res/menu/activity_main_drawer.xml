@@ -4,27 +4,27 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/set_08"
+            android:icon="@drawable/ic_supervisor_account_black_48dp"
             android:title="设备管理" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/set_10"
+            android:icon="@drawable/ic_language_black_48dp"
             android:title="无线中继" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/set_12"
+            android:icon="@drawable/ic_network_wifi_black_48dp"
             android:title="WiFi设置" />
         <item
             android:id="@+id/nav_manage"
-            android:icon="@drawable/advanced_settings"
+            android:icon="@drawable/ic_settings_black_48dp"
             android:title="高级设置" />
 
         <item
-            android:icon="@drawable/set_14"
+            android:icon="@drawable/ic_extension_black_48dp"
             android:title="应用插件" />
 
         <item
-            android:icon="@drawable/set_06"
+            android:icon="@drawable/ic_swap_horiz_black_48dp"
             android:title="切换设备" />
 
     </group>
@@ -32,11 +32,11 @@
     <item android:title="Communicate">
         <menu>
             <item
-                android:icon="@drawable/about_ico"
+                android:icon="@drawable/ic_apps_black_48dp"
                 android:title="关于" />
 
             <item
-                android:icon="@drawable/restart_ico"
+                android:icon="@drawable/ic_power_settings_new_black_48dp"
                 android:title="重启设备" />
             <item
                 android:icon="@drawable/ic_menu_send"
